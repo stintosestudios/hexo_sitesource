@@ -8,7 +8,7 @@ categories: Hexo
 
 # So hexo is kindof cool.
 
-I just started useing the node.js powered static site generater called [hexo](https://hexo.io/). I have been running into a few bugs with it, but over all it seems to work well for what I want it to do. I thought I would write a quick blog post about the hexo source folder, and how I am handlying my source and deployment. Even if noone reads it, it is important to write about stuff like this for my one note sort of speak.
+I just started useing the node.js powered static site generater called [hexo](https://hexo.io/). I have been running into a few bugs with it, but over all it seems to work well for what I want it to do. I thought I would write a quick blog post about the hexo source folder, and how I am handlying my source and deployment. Even if no one reads it, it is important to write about stuff like this for my own notes sort of speak.
 
 <!-- more -->
 
@@ -54,11 +54,13 @@ $ hexo generate
 
 If all goes well there should be a public folder now.
 
-# Running the site locally
+# Running the generated site locally
 
-In my source folder I have placed a simple server.js file that can be used to host the site locally via node.js. To use it I just need to cd into the public folder, and fire it up with node.
+it is sometimes nice to be able to view the site locally via the http:// protocal rather then file:// to make sure that everything is looking good before deployment. To do this in my source folder I have wrote a simple server.js that can be used to host the site locally via node.js. To use it I just need to cd into the public folder, and fire it up with node.
 
 ```bash
 $ cd public
 $ node server.js
 ```
+
+# updaing the source

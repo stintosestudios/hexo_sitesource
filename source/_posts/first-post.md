@@ -15,3 +15,5 @@ This is my first post for my stintose studios blog that I will be hosting on git
 I am trying out a static site generator called [hexo](https://hexo.io/). So far I like it allot compared to the old hand coding style of web development that I have been long sick of. I have all ready written some scripts for it that help with automating the process of making a static site, and so far it goes without saying that hexo is a major time saver. I may write about hexo allot in future posts as well.
 
 It will be nice to gain at least a modest following of like minded people as well hopefully writing this blog will help me connect with some interesting people, as well as force me to become a better writer. It should be fun.
+
+
