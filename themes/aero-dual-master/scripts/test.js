@@ -1,4 +1,3 @@
-console.log('test.js:');
 
 hexo.on('processBefore', function () {
 

@@ -19,5 +19,3 @@ var foo = function(){
 
 };
 ```
-
-{% tagtest %}
