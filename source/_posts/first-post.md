@@ -1,21 +1,15 @@
 ---
-title: First Post
+title: First Post.
 date: 2017-01-08 14:44:00
 tags: [Hexo,Blog,js]
 layout: post
 categories: Hexo
 ---
 
-This is my first post. I am trying out a static site generator called [hexo](https://hexo.io/). It rocks!
+This is my first post for my stintose studios blog that I will be hosting on github pages. The site will feature the animations that I have made with my HTML 5 animation framework I have made that I call [forFrame.js](https://github.com/stintosestudios/forFrame). I will likely blog allot about that, as well as other things pertaining to javascript, and webdev.
 
 <!-- more -->
 
-Here is some js
+I am trying out a static site generator called [hexo](https://hexo.io/). So far I like it allot compared to the old hand coding style of web development that I have been long sick of. I have all ready written some scripts for it that help with automating the process of making a static site, and so far it goes without saying that hexo is a major time saver. I may write about hexo allot in future posts as well.
 
-``` js
-var foo = function(){
-
-   return 'bar';
-
-};
-```
+It will be nice to gain at least a modest following of like minded people as well hopefully writing this blog will help me connect with some interesting people, as well as force me to become a better writer. It should be fun.
