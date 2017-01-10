@@ -5,9 +5,11 @@ layout: page
 
 ## loading
 {% forframe_collection loading alt_radius %}
+{% forframe_collection loading crab %}
 {% forframe_collection loading wave_sin %}
 {% forframe_collection loading yin %}
 {% forframe_collection loading yin2 %}
+{% forframe_collection loading trip %}
 
 ## home alone
 {% forframe_collection home_alone fishboy %}
