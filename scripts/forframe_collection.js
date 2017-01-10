@@ -1,10 +1,10 @@
 
 // process forFrame source folder
-hexo.source.addProcessor('forframe/*.md', function (file) {
+//hexo.source.addProcessor('forframe/*.md', function (file) {
 
-    console.log(file);
+//    console.log(file);
 
-});
+//});
 
 // the tag
 hexo.extend.tag.register('forframe_collection', function (args) {
