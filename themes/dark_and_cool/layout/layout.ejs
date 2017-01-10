@@ -9,17 +9,30 @@
 
 </head>
 <body>
-    <div>
 
-        <!-- menu links -->
-        <% for (var i in theme.menu){ %>
+    <div class="container_main">
 
-            <a href="<%- url_for(theme.menu[i]) %>" ><%= i %></a>
+        <div class="container_header">
 
-        <% } %>
+            <!-- menu links -->
+            <p class="menu_links">
+            <% for (var i in theme.menu){ %>
 
-        <%- body %>
+                <a href="<%- url_for(theme.menu[i]) %>" ><%= i %></a>
+
+            <% } %>
+            </p>
+
+        </div>
+
+        <div class="container_content">
+
+            <%- body %>
+
+        </div>
+
     </div>
+
 </body>
 </html>
 
