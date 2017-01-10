@@ -3,13 +3,21 @@
 <head>
     <meta charset="utf-8">
     <title><%= config.title %></title>
-    
+
     <!-- global css -->
-	<%- css('css/global.css') %>
+    <%- css('css/global.css') %>
 
 </head>
 <body>
     <div>
+
+        <!-- menu links -->
+        <% for (var i in theme.menu){ %>
+
+            <a href="<%- url_for(theme.menu[i]) %>" ><%= i %></a>
+
+        <% } %>
+
         <%- body %>
     </div>
 </body>
