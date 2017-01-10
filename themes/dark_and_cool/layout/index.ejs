@@ -1,0 +1,31 @@
+<div>
+    <% if(config.author){ %>
+       <h1><%= config.author %></h1>
+    <% } %>
+    <% if(config.subtitle){ %>
+    <p><%= config.subtitle %></p>
+    <% } %>
+
+</div>
+<div>
+    <ul>
+    <% page.posts.each(function(post){ %>
+        <li>
+            <h3>
+                <a href="<%- url_for(post.path) %>">
+                    <%= post.title %>
+                </a>
+            </h3>
+            <div>
+                <%= date(post.date, config.date_format) %> 
+            </div>
+
+            <% if(post.excerpt) { %>
+                <p>
+                    <%- post.excerpt %>
+                </p>
+            <% } %>
+        </li>
+    <% }) %>
+    </ul>
+</div>
