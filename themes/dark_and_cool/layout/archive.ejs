@@ -1,0 +1,19 @@
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+    <% page.posts.each(function(post){ %>
+
+        <div class="archive-item">
+
+            <a href="<%- url_for(post.path) %>" class="post-title">
+
+                <%= post.title || __('untitled_post') %>
+
+            </a>
+
+            <div class="date text-muted">Posted on <%= full_date(post.date) %></div>
+
+        </div>
+
+    <% }) %>
+
+</div>
