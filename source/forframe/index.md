@@ -11,6 +11,9 @@ layout: page
 {% forframe_collection loading yin2 %}
 {% forframe_collection loading trip %}
 
+## this is a test
+{% forframe_thumbs loading alt_radius;crab;wave_sin;yin;yin2;trip %}
+
 ## [home_alone](forframe/home_alone.html)
 {% forframe_collection home_alone fishboy %}
 {% forframe_collection home_alone scream %}
