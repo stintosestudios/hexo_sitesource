@@ -27,7 +27,7 @@ hexo.extend.tag.register('forframe_thumbs', function (args) {
     html;
 
     html = '<div class="forframe_thumb_container">';
-    html += '<h2>'+collectionName+'<\/h2>';
+    html += '<h2><a href=\"forframe\/'+collectionName+'.html\">'+collectionName+'</a><\/h2>';
     projects.forEach(function (projectName) {
 
         projectUrl = 'https://raw.githubusercontent.com/stintosestudios/forFrame_' + collectionName + '/master/projects/' + projectName + '/',
