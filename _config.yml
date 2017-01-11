@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: dark_and_cool
+theme: aero-dual-master
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
