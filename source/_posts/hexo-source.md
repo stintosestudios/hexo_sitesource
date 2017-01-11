@@ -56,11 +56,11 @@ If all goes well there should be a public folder now.
 
 # Running the generated site locally
 
-it is sometimes nice to be able to view the site locally via the http:// protocal rather then file:// to make sure that everything is looking good before deployment. To do this in my source folder I have wrote a simple server.js that can be used to host the site locally via node.js. To use it I just need to cd into the public folder, and fire it up with node.
+It is sometimes nice to be able to view the site locally via the http:// protocal rather then file:// to make sure that everything is looking good before deployment. To do this in my source folder I have wrote a simple server.js that can be used to host the site locally via node.js. To use it I just need to cd into the public folder, and fire it up with node.
 
 ```bash
 $ cd public
 $ node server.js
 ```
 
-# updaing the source
+# updating the source
