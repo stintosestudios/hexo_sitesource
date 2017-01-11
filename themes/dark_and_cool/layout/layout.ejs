@@ -12,13 +12,25 @@
 
     <div class="container_main">
 
-        <div class="container_header">
+    <%
+
+        var headerStyle = '';
+
+        if (theme.use_header_cover) {
+
+            headerStyle = 'background-image: url(' + theme.index_cover + ')';
+
+        }
+
+    %>
+
+        <div class="container_header" style="<%= headerStyle %>">
 
             <!-- menu links -->
-            <p class="menu_links">
+            <p class="menu_navbar">
             <% for (var i in theme.menu){ %>
 
-                <a href="<%- url_for(theme.menu[i]) %>" ><%= i %></a>
+                <a class="menu_link" href="<%- url_for(theme.menu[i]) %>" ><%= i %></a>
 
             <% } %>
             </p>

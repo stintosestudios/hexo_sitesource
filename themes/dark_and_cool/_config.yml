@@ -9,7 +9,7 @@ menu:
 use_header_cover: true
 
 # URL of the banner image at source/img/
-index_cover: /img/banner.png
+index_cover: /img/banner_320.png
 
 widgets:
 - category
