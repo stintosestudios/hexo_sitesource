@@ -21,7 +21,8 @@ So the crude yet effetive way is to just make it so the background image is for 
 
 # The complacated, but more elagent way
 
-![repeating background](/img/footback_1_320.gif)
+<!-- ![repeating background](/img/footback_1_320.gif) -->
+{% forframe_gif collection_1_5_3 footback 320 %}
 
 The above gif should illastrates why this approche is a bit more complacted, but is a little more elagent. It allows for me to work dirrectly with a single seamless image that does not have the beginning part appened to the end of it as I do with the crude yet effective way that I have described earler. To pull this off I need to make use of two ctx.drawImage calls.
 
