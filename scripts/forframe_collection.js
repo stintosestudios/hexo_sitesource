@@ -1,10 +1,11 @@
 
-// process forFrame source folder
-//hexo.source.addProcessor('forframe/*.md', function (file) {
+// where to look for the collection of images
 
-//    console.log(file);
+// raw git
+//var baseUrl = 'https://raw.githubusercontent.com/stintosestudios/';
 
-//});
+// local
+var baseUrl = '/img/';
 
 // the tag
 hexo.extend.tag.register('forframe_collection', function (args) {
@@ -30,7 +31,7 @@ hexo.extend.tag.register('forframe_thumbs', function (args) {
     html += '<h2><a href=\"forframe\/'+collectionName+'.html\">'+collectionName+'</a><\/h2>';
     projects.forEach(function (projectName) {
 
-        projectUrl = 'https://raw.githubusercontent.com/stintosestudios/forFrame_' + collectionName + '/master/projects/' + projectName + '/',
+        projectUrl = baseUrl + 'forFrame_' + collectionName + '/master/projects/' + projectName + '/',
         thumUrl = projectUrl + 'thum_128.png';
         gifUrl = projectUrl + 'gif/gif_1_320.gif';
 
