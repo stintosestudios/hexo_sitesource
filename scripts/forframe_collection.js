@@ -31,7 +31,7 @@ hexo.extend.tag.register('forframe_gif', function (args) {
 
     }
 
-    return '<img src=\"' + gifUrl + '\">';
+    return '<img class="forframe_lone_gif" src=\"' + gifUrl + '\">';
 
 });
 
