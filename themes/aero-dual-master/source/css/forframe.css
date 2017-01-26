@@ -1,0 +1,31 @@
+.forframe_lone_gif{
+
+}
+
+.forframe_thumb_container{
+
+}
+
+.forframe_thumb_link{
+
+}
+
+.forframe_collection_container{
+
+    background: #efefef;
+    text-align:center;
+    margin-bottom:10px;
+    padding:5px;
+    padding-bottom:10px;
+}
+
+.forframe_collection_container > p{
+
+    font-size:12pt;
+    font-family:monospace;
+
+}
+
+.forframe_collection_link{
+
+}
