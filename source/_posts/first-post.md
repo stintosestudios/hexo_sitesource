@@ -6,8 +6,6 @@ layout: post
 categories: Hexo
 ---
 
-# It's good to Blog.
-
 This is my first post for my stintose studios blog that I will be hosting on github pages. The site will feature the animations that I have made with my HTML 5 animation framework I have made that I call [forFrame.js](https://github.com/stintosestudios/forFrame). I will likely blog allot about that, as well as other things pertaining to javascript, and webdev.
 
 <!-- more -->

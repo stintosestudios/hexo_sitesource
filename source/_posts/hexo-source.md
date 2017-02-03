@@ -6,8 +6,6 @@ layout: post
 categories: Hexo
 ---
 
-# So hexo is kind of cool.
-
 I just started using the node.js powered static site generator called [hexo](https://hexo.io/). I have been running into a few bugs with it, but over all it seems to work well for what I want it to do. I thought I would write a quick blog post about the hexo source folder, and how I am handling my source and deployment. Even if no one reads it, it is important to write about stuff like this for my own notes sort of speak.
 
 <!-- more -->

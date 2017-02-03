@@ -1,4 +1,4 @@
-<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div>
 
     <% page.posts.each(function(post){ %>
 
@@ -15,5 +15,7 @@
         </div>
 
     <% }) %>
-
+	
+	<% page.posts.each(function(post){ console.log(post.title)}) %>
+	
 </div>

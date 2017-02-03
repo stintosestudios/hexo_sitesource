@@ -64,6 +64,7 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: aero-dual-master
+## theme: dark_and_cool
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

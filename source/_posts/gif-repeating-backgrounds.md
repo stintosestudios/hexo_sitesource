@@ -6,8 +6,6 @@ layout: post
 categories: GIF
 ---
 
-# Repeating Backgrounds
-
 Something that comes up a lot when making a GIF of mine is to have a looping background. I Often see this kind of thing in about every cartoon ever made, so of course this is something that I run into now and then. After making a few GIF’s I was able to get this simple, but timeless animation trick somewhat solid, and have found that one method of getting it done is perhaps a bit more professional than the other.
 
 <!-- more -->

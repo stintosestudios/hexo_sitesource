@@ -8,6 +8,8 @@ categories: Hexo
 
 A Hexo tag allows for me to quickly insert javascript generated html code into my markdown posts. Once I have a nice little tag written I can just call the tag from within my markdown, pass it a few arguments, and the html will be inserted when generating the public file.
 
+<!-- more -->
+
 My first hexo tag helps me with inserting GIF's from my forFrame.js collections into a post in which I might be writing about it.
 
 Here is the js of that tag:
