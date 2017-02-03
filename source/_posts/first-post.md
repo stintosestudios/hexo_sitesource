@@ -1,7 +1,7 @@
 ---
 title: First Post.
 date: 2017-01-08 14:44:00
-tags: [Hexo,Blog,js]
+tags: [hexo,blog,js]
 layout: post
 categories: Hexo
 ---

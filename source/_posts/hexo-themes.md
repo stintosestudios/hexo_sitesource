@@ -1,7 +1,7 @@
 ---
 title: Hexo Themes.
 date: 2017-01-10 19:58:00
-tags: [Hexo,js]
+tags: [hexo,js]
 layout: post
 categories: Hexo
 ---

@@ -1,7 +1,7 @@
 ﻿---
 title: Hexo Tags.
 date: 2017-01-14 19:17:00
-tags: [Hexo,js]
+tags: [hexo,js]
 layout: post
 categories: Hexo
 ---
