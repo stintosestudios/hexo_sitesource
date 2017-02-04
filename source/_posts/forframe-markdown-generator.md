@@ -6,7 +6,7 @@ layout: post
 categories: forframe
 ---
 
-So I have been having allot of fun with my animation framework that I call forframe.js. Allot of my time is spent making new animations with it, nothing to interesting, just simple little exercises to test out the framework. However when I am not making a new animation I am looking into ways that I can improve the framework itself. In addition I write additional software that helps to reduce the amount of time that I am spending preforming mundane repetitive tasks that eat up time that I could spend making a new animation.
+So I have been having a lot of fun with my animation framework that I call forframe.js. A lot of my time is spent making new animations with it, nothing too interesting, just simple little exercises to test out the framework. However when I am not making a new animation I am looking into ways that I can improve the framework itself. In addition I write additional software that helps to reduce the amount of time that I am spending preforming mundane repetitive tasks that eat up time that I could spend making a new animation.
 
 <!-- more -->
 
@@ -20,7 +20,7 @@ So I wanted to make a tool that...
 * Uses that data to build a list of repositories that are forframe animation collections.
 * Also builds a list of each project in each collection.
 * Uses the data gained to build a bunch of markdown files for each collection.
-* Each makdown file calls a hexo tag that will make a collection of links for each each project in the collection when I build my site using hexo.
+* Each makrdown file calls a hexo tag that will make a collection of links for each each project in the collection when I build my site using hexo.
 * when done the tool also makes an index.md, using another hexo tag of mine that is intended for a collection link, using the latest project thumb image in the link to the collection page.
 * the collection of files are stored in a folder called "forframe" inside another folder called "source" which is consistent with the way things are structured in a hexo.io working project tree.
 
@@ -38,83 +38,83 @@ Here is some code form the tool.
 
 ```js
 var build = function (repoNames) {
-
+ 
     log('Ready to build source files');
-
+ 
     var fi = 0,
-
+ 
     writeDone = function () {
-
+ 
         log('build done.');
-
+ 
     },
-
+ 
     writeNext = function () {
-
+ 
         var projects = '',
         text = '';
-
+ 
         repoNames[fi][2].forEach(function (project, index, names) {
-
+ 
             projects += project;
-
+ 
             if (index < names.length - 1) {
-
+ 
                 projects += ';';
-
+ 
             }
-
+ 
         });
-
+ 
         log('projectNames: ' + projects);
-
+ 
         // write title
         text = '---' + os.EOL +
             'title: ' + repoNames[fi][0] + ' GIF collection' + os.EOL +
             'layout: page' + os.EOL +
             '---' + os.EOL + os.EOL;
-
+ 
         // write hexo tag call
         text += '{% forframe_thumbs ' +
         repoNames[fi][0].substr(9, repoNames[fi][0].length) +
         ' ' + projects + ' %}';
-
+ 
         fs.writeFile('./source/forframe/' + repoNames[fi][0] + '.md', text, function (err) {
-
+ 
             if (err) {
-
+ 
                 log('error writing file for ' + repoNames[fi][0] + '.');
                 ifFail(err);
-
+ 
             } else {
-
+ 
                 log(repoNames[fi][0] + ' file create.');
-
+ 
                 fi += 1;
-
+ 
                 if (fi < repoNames.length) {
-
+ 
                     writeNext();
-
+ 
                 } else {
-
+ 
                     // building of collecton files is now done, build/update the index.
                     buildIndex(repoNames, function () {
-
+ 
                         writeDone();
-
+ 
                     });
-
+ 
                 }
-
+ 
             }
-
+ 
         });
-
+ 
     };
-
+ 
     writeNext();
-
+ 
 };
 ```
 
